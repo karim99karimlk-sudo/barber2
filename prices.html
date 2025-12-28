@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barber Prices</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #000;
+    }
+
+    /* PRICES SECTION */
+    .prices-section {
+      padding: 90px 20px;
+    }
+
+    .prices-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .prices-title {
+      text-align: center;
+      font-size: 44px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .prices-subtitle {
+      text-align: center;
+      font-size: 16px;
+      opacity: 0.7;
+      margin-bottom: 55px;
+    }
+
+    .prices-list {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    .price-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    .price-item:hover {
+      background: rgba(0,0,0,0.03);
+    }
+
+    .price-top {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .service {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .dots {
+      flex: 1;
+      border-bottom: 1px dashed #000;
+      margin: 0 12px;
+      opacity: 0.4;
+    }
+
+    .price {
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .service-details {
+      font-size: 14px;
+      opacity: 0.7;
+      padding-left: 2px;
+    }
+
+    /* BUTTON */
+    .book-btn {
+      display: block;
+      margin: 60px auto 0;
+      padding: 14px 36px;
+      border: 2px solid #000;
+      background: transparent;
+      color: #000;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .book-btn:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 13px;
+      opacity: 0.6;
+      margin-top: 25px;
+    }
+
+    /* TABLET */
+    @media (max-width: 768px) {
+      .prices-title {
+        font-size: 36px;
+      }
+
+      .price-top {
+        font-size: 16px;
+      }
+    }
+
+    /* MOBILE */
+    @media (max-width: 480px) {
+      .prices-section {
+        padding: 70px 15px;
+      }
+
+      .prices-title {
+        font-size: 30px;
+      }
+
+      .prices-subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      .price-top {
+        font-size: 15px;
+      }
+
+      .service-details {
+        font-size: 13px;
+      }
+
+      .book-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="prices-section">
+    <div class="prices-container">
+
+      <h2 class="prices-title">Our Services & Prices</h2>
+      <p class="prices-subtitle">
+        Professional grooming, clean cuts, and premium service
+      </p>
+
+      <div class="prices-list">
+
+        <div class="price-item">
+          <div class="price-top">
+            <span class="service">Classic Haircut</span>
+            <span class="dots"></span>
+            <span class="price">$15</span>
+          </div>
+          <p class="service-details">Precision cut & styling · 30 min</p>
+        </div>
+
+        <div class="price-item">
+          <div class="price-top">
+            <span class="service">Beard Trim</span>
+            <span class="dots"></span>
+            <span class="price">$10</span>
+          </div>
+          <p class="service-details">Shape, line-up & finish · 20 min</p>
+        </div>
+
+        <div class="price-item">
+          <div class="price-top">
+            <span class="service">Haircut + Beard</span>
+            <span class="dots"></span>
+            <span class="price">$22</span>
+          </div>
+          <p class="service-details">Complete grooming package · 45 min</p>
+        </div>
+
+        <div class="price-item">
+          <div class="price-top">
+            <span class="service">Kids Haircut</span>
+            <span class="dots"></span>
+            <span class="price">$12</span>
+          </div>
+          <p class="service-details">Ages 4–12 · 25 min</p>
+        </div>
+
+        <div class="price-item">
+          <div class="price-top">
+            <span class="service">Hot Towel Shave</span>
+            <span class="dots"></span>
+            <span class="price">$18</span>
+          </div>
+          <p class="service-details">Hot towel, razor shave & aftercare · 30 min</p>
+        </div>
+
+      </div>
+
+      <button class="book-btn">Book Appointment</button>
+
+      <p class="note">
+        * Prices may vary depending on hair length & style. Appointment recommended.
+      </p>
+
+    </div>
+  </section>
+
+</body>
+</html>

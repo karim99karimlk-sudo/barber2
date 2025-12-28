@@ -198,6 +198,7 @@ body {
   align-items: center;
   height: 100vh;
   padding: 30px 40px 0px 60px;  
+
 }
 .hero-text-wrapper{
   display: flex;
@@ -306,6 +307,7 @@ body {
     align-items: self-start;
     padding: 100px 10px;
     gap: 50px;
+    margin-bottom: 30px;
   }
   .hero-text-wrapper{
     width: 100%;
@@ -351,6 +353,8 @@ body {
   height: 100vh;
   margin: 0 auto;
   padding: 40px;
+    border-radius: 30px 30px 0 0;
+
   overflow: hidden;
 }
 
@@ -464,7 +468,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .dot {
@@ -583,8 +587,6 @@ body {
   line-height: 1.1;
   font-weight: 700;
   width: 700px;
-
-  
 }
 .services-para{
   font-size: 20px;
@@ -593,8 +595,6 @@ body {
 
  
 }
-
-
 
 .services-prices{
   display: flex;
@@ -614,6 +614,51 @@ body {
 }
 
 
+@media screen and (max-width: 768px){
+  .services-section{
+    
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 30px;
+  gap: 50px;
+  margin-top: 80px;
+  }
+  .services-title-container{
+    font-size: 54px;
+    width: 100%;
+    ;
+  }
+  .services-container{
+    flex-direction: column;
+  }
+  .services-title{
+    font-size: 34px;
+    font-weight: 700;
+    width: 300px;
+  }
+  .services-para{
+    font-size: 20px;
+    line-height: 1.6;
+    width: 300px;
+  }
+
+  .services-prices{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
+}
+.service-wrapper{
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px ;
+  font-size: 20px;
+}
+}
+
 .work-container{
   height: 100vh;
   background-color: #000;
@@ -630,7 +675,7 @@ body {
   flex-direction: column;
   gap: 20px;
   text-align: center;
-
+  align-items: center;
 }
 .work-title{
   font-family: 'Bricolage Grotesque';
@@ -690,6 +735,39 @@ body {
   object-fit: cover;
 
 }
+@media screen and (max-width: 768px){
+  .work-container{
+   padding: 5px;
+   gap: 10px;
+   text-align: center;
+   height: 70vh;
+   justify-content: center;
+
+}
+  .work-title{
+  font-size: 34px;
+  width: 300px;
+}
+  .work-images-wrapper{
+  gap: 5px;
+}
+  .one-big-img{
+  width: 150px;
+  height: 180px;
+}
+
+ .four-small-imgs{
+  
+  gap: 2px;
+  
+}
+  .four-small-imgs img{
+  width: 90px;
+  height: 90px;
+
+}
+}
+
 
 .testimonials-container{
   height: 80vh;
